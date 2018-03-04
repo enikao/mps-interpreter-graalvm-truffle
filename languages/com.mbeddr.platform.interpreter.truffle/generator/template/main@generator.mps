@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:ba43ffdc-9b07-428e-8e28-aece2f5d36c5(main@generator)">
+<model ref="r:3b0056ca-03eb-4081-9332-8ec0610b0f3b(main@generator)">
   <persistence version="9" />
   <languages>
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
-    <import index="303z" ref="r:cdac0a1c-6340-41c3-ab3a-913dbaeae6ad(NewLanguage.structure)" />
+    <import index="9j3q" ref="r:7db65f88-3d8c-4a34-b913-6c4d82f4c407(com.mbeddr.platform.interpreter.truffle.structure)" />
   </imports>
   <registry>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
@@ -17,7 +17,7 @@
       </concept>
     </language>
   </registry>
-  <node concept="bUwia" id="1gwtcV5ees$">
+  <node concept="bUwia" id="1XgvUCnvHoD">
     <property role="TrG5h" value="main" />
   </node>
 </model>

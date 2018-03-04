@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:2c42697e-606c-476e-a82b-62ce0518a90c(NewLanguage.constraints)">
+<model ref="r:56e9b15e-d369-436e-a998-15dbbc08e2ac(example.mps.com.oracle.truffle.sl.constraints)">
   <persistence version="9" />
   <languages>
     <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="4" />

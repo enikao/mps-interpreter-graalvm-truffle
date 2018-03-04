@@ -3354,7 +3354,7 @@
                 <node concept="YS8fn" id="27x4Bnlzs2V" role="3cqZAp">
                   <node concept="2ShNRf" id="27x4Bnlzuvz" role="YScLw">
                     <node concept="1pGfFk" id="27x4Bnlzuw9" role="2ShVmc">
-                      <ref role="37wK5l" to="wyt6:~IllegalArgumentException.&lt;init&gt;(java.lang.String,java.lang.Throwable)" resolve="IllegalArgumentException" />
+                      <ref role="37wK5l" to="wyt6:~IllegalArgumentException.&lt;init&gt;(java.lang.String)" resolve="IllegalArgumentException" />
                       <node concept="Xl_RD" id="27x4Bnlzuwa" role="37wK5m">
                         <property role="Xl_RC" value="Illegal type " />
                       </node>

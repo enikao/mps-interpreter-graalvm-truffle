@@ -3,10 +3,14 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/NewLanguage/NewLanguage.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.platform.interpreter.truffle/com.mbeddr.platform.interpreter.truffle.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/example.mps.com.oracle.truffle.sl/example.mps.com.oracle.truffle.sl.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/GraalApi/GraalApi.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/GraalTest/GraalTest.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/NewLanguage.runtime/NewLanguage.runtime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/NewSolution/NewSolution.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/example.mps.com.oracle.truffle.sl.interpreter/example.mps.com.oracle.truffle.sl.interpreter.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/sandbox.simplelanguage/sandbox.simplelanguage.msd" folder="" />
     </projectModules>
   </component>
 </project>
