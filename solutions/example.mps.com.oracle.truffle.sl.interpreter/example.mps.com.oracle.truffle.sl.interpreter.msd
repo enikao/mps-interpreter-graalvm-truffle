@@ -8,6 +8,8 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">fc7afa9e-31d8-4e6d-9ac0-b707766a394d(example.mps.com.oracle.truffle.sl)</dependency>
+    <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+    <dependency reexport="false">f8d5216a-c767-462a-9290-97f1f33a0497(GraalApi)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:73780afc-f2ef-4c4c-b03a-548a35211344:com.mbeddr.platform.interpreter.truffle" version="0" />
@@ -25,6 +27,7 @@
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
+    <module reference="f8d5216a-c767-462a-9290-97f1f33a0497(GraalApi)" version="0" />
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />

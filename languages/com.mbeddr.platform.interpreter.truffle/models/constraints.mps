@@ -308,5 +308,77 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="6bz27cUlBM9">
+    <property role="3GE5qa" value="expression" />
+    <ref role="1M2myG" to="9j3q:6bz27cUl2or" resolve="InterpreterInvokeExpression" />
+    <node concept="1N5Pfh" id="6bz27cUlDE7" role="1Mr941">
+      <ref role="1N5Vy1" to="9j3q:6bz27cUlAf$" resolve="callFeature" />
+      <node concept="3dgokm" id="6bz27cUlDPJ" role="1N6uqs">
+        <node concept="3clFbS" id="6bz27cUlDPL" role="2VODD2">
+          <node concept="3clFbF" id="6bz27cUlDSE" role="3cqZAp">
+            <node concept="2YIFZM" id="6bz27cUlDSF" role="3clFbG">
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+              <node concept="2OqwBi" id="6bz27cUlDSG" role="37wK5m">
+                <node concept="2OqwBi" id="6bz27cUlDSH" role="2Oq$k0">
+                  <node concept="2OqwBi" id="6bz27cUlDSI" role="2Oq$k0">
+                    <node concept="2rP1CM" id="6bz27cUlDSJ" role="2Oq$k0" />
+                    <node concept="2Xjw5R" id="6bz27cUlDSK" role="2OqNvi">
+                      <node concept="1xMEDy" id="6bz27cUlDSL" role="1xVPHs">
+                        <node concept="chp4Y" id="6bz27cUlDSM" role="ri$Ld">
+                          <ref role="cht4Q" to="9j3q:1XgvUCnwnhg" resolve="IEvaluator" />
+                        </node>
+                      </node>
+                      <node concept="1xIGOp" id="6bz27cUlDSN" role="1xVPHs" />
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="6bz27cUlDSO" role="2OqNvi">
+                    <ref role="3Tt5mk" to="9j3q:1XgvUCnyA$T" resolve="target" />
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="6bz27cUlDSP" role="2OqNvi">
+                  <ref role="37wK5l" to="tpcn:hEwILKK" resolve="getLinkDeclarations" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1N5Pfh" id="6bz27cUlEnl" role="1Mr941">
+      <ref role="1N5Vy1" to="9j3q:6bz27cUlAOC" resolve="argumentsFeature" />
+      <node concept="3dgokm" id="6bz27cUlEnm" role="1N6uqs">
+        <node concept="3clFbS" id="6bz27cUlEnn" role="2VODD2">
+          <node concept="3clFbF" id="6bz27cUlEno" role="3cqZAp">
+            <node concept="2YIFZM" id="6bz27cUlEnp" role="3clFbG">
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+              <node concept="2OqwBi" id="6bz27cUlEnq" role="37wK5m">
+                <node concept="2OqwBi" id="6bz27cUlEnr" role="2Oq$k0">
+                  <node concept="2OqwBi" id="6bz27cUlEns" role="2Oq$k0">
+                    <node concept="2rP1CM" id="6bz27cUlEnt" role="2Oq$k0" />
+                    <node concept="2Xjw5R" id="6bz27cUlEnu" role="2OqNvi">
+                      <node concept="1xMEDy" id="6bz27cUlEnv" role="1xVPHs">
+                        <node concept="chp4Y" id="6bz27cUlEnw" role="ri$Ld">
+                          <ref role="cht4Q" to="9j3q:1XgvUCnwnhg" resolve="IEvaluator" />
+                        </node>
+                      </node>
+                      <node concept="1xIGOp" id="6bz27cUlEnx" role="1xVPHs" />
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="6bz27cUlEny" role="2OqNvi">
+                    <ref role="3Tt5mk" to="9j3q:1XgvUCnyA$T" resolve="target" />
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="6bz27cUlEnz" role="2OqNvi">
+                  <ref role="37wK5l" to="tpcn:hEwILKK" resolve="getLinkDeclarations" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
