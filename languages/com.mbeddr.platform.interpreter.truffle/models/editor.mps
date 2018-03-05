@@ -35,7 +35,9 @@
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
+      <concept id="1235728439575" name="jetbrains.mps.lang.editor.structure.BaseLineCell" flags="ln" index="2R9Tw8" />
       <concept id="4323500428121233431" name="jetbrains.mps.lang.editor.structure.EditorCellId" flags="ng" index="2SqB2G" />
+      <concept id="1149850725784" name="jetbrains.mps.lang.editor.structure.CellModel_AttributedNodeCell" flags="ng" index="2SsqMj" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -717,6 +719,61 @@
         <node concept="2iRkQZ" id="6bz27cUmVKB" role="2czzBx" />
       </node>
       <node concept="2iRkQZ" id="6bz27cUmQv7" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6bz27cUKZdd">
+    <ref role="1XX52x" to="9j3q:6bz27cUKX4h" resolve="JavaTypeAnnotation" />
+    <node concept="3EZMnI" id="6bz27cUKZr7" role="2wV5jI">
+      <node concept="3EZMnI" id="6bz27cUKZ$u" role="3EZMnx">
+        <node concept="VPM3Z" id="6bz27cUKZ$w" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="6bz27cUKZ$C" role="3EZMnx">
+          <property role="3F0ifm" value="@javaType" />
+        </node>
+        <node concept="3F1sOY" id="6bz27cUKZRe" role="3EZMnx">
+          <ref role="1NtTu8" to="9j3q:6bz27cUKYPE" resolve="javaType" />
+        </node>
+        <node concept="2iRfu4" id="6bz27cUKZ$z" role="2iSdaV" />
+      </node>
+      <node concept="2SsqMj" id="6bz27cUL00D" role="3EZMnx">
+        <node concept="2R9Tw8" id="6bz27cUNuJh" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="2iRkQZ" id="6bz27cUKZra" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6bz27cUVs_j">
+    <ref role="1XX52x" to="9j3q:6bz27cURoyy" resolve="JavaTypeAnnotationLink" />
+    <node concept="3EZMnI" id="6bz27cUVsKT" role="2wV5jI">
+      <node concept="3EZMnI" id="6bz27cUVsKU" role="3EZMnx">
+        <node concept="VPM3Z" id="6bz27cUVsKV" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="6bz27cUVsKW" role="3EZMnx">
+          <property role="3F0ifm" value="@javaTypeLink" />
+        </node>
+        <node concept="1iCGBv" id="6bz27cUVt1r" role="3EZMnx">
+          <ref role="1NtTu8" to="9j3q:6bz27cURrdT" resolve="feature" />
+          <node concept="1sVBvm" id="6bz27cUVt1t" role="1sWHZn">
+            <node concept="3SHvHV" id="6bz27cUVt3U" role="2wV5jI" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="6bz27cUVtb0" role="3EZMnx">
+          <property role="3F0ifm" value=":" />
+        </node>
+        <node concept="3F1sOY" id="6bz27cUVsKX" role="3EZMnx">
+          <ref role="1NtTu8" to="9j3q:6bz27cURq3L" resolve="javaType" />
+        </node>
+        <node concept="2iRfu4" id="6bz27cUVsKY" role="2iSdaV" />
+      </node>
+      <node concept="2SsqMj" id="6bz27cUVsKZ" role="3EZMnx">
+        <node concept="2R9Tw8" id="6bz27cUVsL0" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="2iRkQZ" id="6bz27cUVsL1" role="2iSdaV" />
     </node>
   </node>
 </model>

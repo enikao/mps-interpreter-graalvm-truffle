@@ -7,11 +7,18 @@
   </languages>
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="6054523464626862044" name="jetbrains.mps.lang.structure.structure.AttributeInfo_IsMultiple" flags="ng" index="tn0Fv">
+        <property id="6054523464626875854" name="value" index="tnX3d" />
+      </concept>
+      <concept id="2992811758677295509" name="jetbrains.mps.lang.structure.structure.AttributeInfo" flags="ng" index="M6xJ_">
+        <property id="7588428831955550663" name="role" index="Hh88m" />
+        <child id="7588428831955550186" name="multiple" index="HhnKV" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
@@ -46,6 +53,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -592,6 +600,58 @@
     <property role="3GE5qa" value="expression" />
     <property role="TrG5h" value="IndexInitConceptFunction" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  </node>
+  <node concept="1TIwiD" id="6bz27cUounc">
+    <property role="EcuMT" value="7125548326424012236" />
+    <property role="3GE5qa" value="evaluator" />
+    <property role="TrG5h" value="DefaultEvaluator" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6bz27cUouBp" role="PzmwI">
+      <ref role="PrY4T" node="1XgvUCnwnhg" resolve="IEvaluator" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6bz27cUKX4h">
+    <property role="EcuMT" value="7125548326430429457" />
+    <property role="TrG5h" value="JavaTypeAnnotation" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="1TJgyj" id="6bz27cUKYPE" role="1TKVEi">
+      <property role="IQ2ns" value="7125548326430436714" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="javaType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1H" resolve="Type" />
+    </node>
+    <node concept="M6xJ_" id="6bz27cUKY2I" role="lGtFl">
+      <property role="Hh88m" value="javaTypeAnnotation" />
+      <node concept="tn0Fv" id="6bz27cUKY9G" role="HhnKV">
+        <property role="tnX3d" value="false" />
+      </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6bz27cURoyy">
+    <property role="EcuMT" value="7125548326432114850" />
+    <property role="TrG5h" value="JavaTypeAnnotationLink" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="1TJgyj" id="6bz27cURrdT" role="1TKVEi">
+      <property role="IQ2ns" value="7125548326432125817" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="feature" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1XgvUCnwnhg" resolve="IEvaluator" />
+    </node>
+    <node concept="1TJgyj" id="6bz27cURq3L" role="1TKVEi">
+      <property role="IQ2ns" value="7125548326432121073" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="javaType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1H" resolve="Type" />
+    </node>
+    <node concept="M6xJ_" id="6bz27cURpcb" role="lGtFl">
+      <property role="Hh88m" value="javaTypeAnnotationLink" />
+      <node concept="tn0Fv" id="6bz27cURpx3" role="HhnKV">
+        <property role="tnX3d" value="true" />
+      </node>
+    </node>
   </node>
 </model>
 
