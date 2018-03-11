@@ -2337,5 +2337,36 @@
       <node concept="3clFbS" id="1uXWfcRIKSy" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="1uXWfcS3ruk">
+    <property role="3GE5qa" value="evaluator" />
+    <ref role="13h7C2" to="9j3q:1XgvUCnPtvc" resolve="ISpecialization" />
+    <node concept="13i0hz" id="1uXWfcS3rKF" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="containsLoop" />
+      <node concept="3Tm1VV" id="1uXWfcS3rKG" role="1B3o_S" />
+      <node concept="10P_77" id="1uXWfcS3rTJ" role="3clF45" />
+      <node concept="3clFbS" id="1uXWfcS3rKI" role="3clF47">
+        <node concept="3clFbF" id="1uXWfcS3t_J" role="3cqZAp">
+          <node concept="2OqwBi" id="1uXWfcS3HwI" role="3clFbG">
+            <node concept="2OqwBi" id="1uXWfcS3tIe" role="2Oq$k0">
+              <node concept="13iPFW" id="1uXWfcS3t_I" role="2Oq$k0" />
+              <node concept="2Rf3mk" id="1uXWfcS3u9x" role="2OqNvi">
+                <node concept="1xMEDy" id="1uXWfcS3F1u" role="1xVPHs">
+                  <node concept="chp4Y" id="1uXWfcS3Fst" role="ri$Ld">
+                    <ref role="cht4Q" to="9j3q:6bz27cUl2or" resolve="InterpreterInvokeExpression" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3GX2aA" id="1uXWfcS3NQ5" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="1uXWfcS3rul" role="13h7CW">
+      <node concept="3clFbS" id="1uXWfcS3rum" role="2VODD2" />
+    </node>
+  </node>
 </model>
 
