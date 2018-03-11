@@ -12,6 +12,10 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
+        <child id="1068498886297" name="rValue" index="37vLTx" />
+        <child id="1068498886295" name="lValue" index="37vLTJ" />
+      </concept>
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
@@ -19,6 +23,14 @@
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
+      <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
+        <child id="1197027771414" name="operand" index="2Oq$k0" />
+        <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
+        <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
+      </concept>
+      <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
       <concept id="1070475587102" name="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" flags="nn" index="XkiVB" />
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
@@ -26,19 +38,27 @@
         <child id="1070534934091" name="type" index="10QFUM" />
         <child id="1070534934092" name="expression" index="10QFUP" />
       </concept>
+      <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
         <property id="1075300953594" name="abstractClass" index="1sVAO0" />
+        <property id="1221565133444" name="isFinal" index="1EXbeo" />
         <child id="1095933932569" name="implementedInterface" index="EKbjA" />
         <child id="1165602531693" name="superclass" index="1zkMxy" />
+      </concept>
+      <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <property id="1176718929932" name="isFinal" index="3TUv4t" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
+      <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
+        <property id="4276006055363816570" name="isSynchronized" index="od$2w" />
+        <property id="1181808852946" name="isFinal" index="DiZV1" />
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
@@ -53,6 +73,9 @@
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
+        <child id="1068581517676" name="expression" index="3cqZAk" />
+      </concept>
       <concept id="1068581242867" name="jetbrains.mps.baseLanguage.structure.LongType" flags="in" index="3cpWsb" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
@@ -74,6 +97,7 @@
       </concept>
       <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615" />
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
@@ -307,6 +331,78 @@
       <node concept="2AHcQZ" id="1uXWfcRg_Dz" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
+    </node>
+  </node>
+  <node concept="312cEu" id="1uXWfcRzKSa">
+    <property role="TrG5h" value="TruffleInterpreterControlFlowException" />
+    <node concept="3Tm1VV" id="1uXWfcRzKSb" role="1B3o_S" />
+    <node concept="3uibUv" id="1uXWfcRzM8d" role="1zkMxy">
+      <ref role="3uigEE" to="b0os:~ControlFlowException" resolve="ControlFlowException" />
+    </node>
+  </node>
+  <node concept="312cEu" id="1uXWfcRzNDl">
+    <property role="TrG5h" value="TruffleInterpreterReturnException" />
+    <property role="1EXbeo" value="false" />
+    <node concept="312cEg" id="1uXWfcRzQ0V" role="jymVt">
+      <property role="TrG5h" value="returnValue" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm6S6" id="1uXWfcRzQ0W" role="1B3o_S" />
+      <node concept="3uibUv" id="1uXWfcRzQ0Y" role="1tU5fm">
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1uXWfcRzRIW" role="jymVt" />
+    <node concept="3clFbW" id="1uXWfcRzP29" role="jymVt">
+      <node concept="3cqZAl" id="1uXWfcRzP2b" role="3clF45" />
+      <node concept="3Tm1VV" id="1uXWfcRzP2c" role="1B3o_S" />
+      <node concept="3clFbS" id="1uXWfcRzP2d" role="3clF47">
+        <node concept="3clFbF" id="1uXWfcRzQ0Z" role="3cqZAp">
+          <node concept="37vLTI" id="1uXWfcRzQ11" role="3clFbG">
+            <node concept="2OqwBi" id="1uXWfcRzT9D" role="37vLTJ">
+              <node concept="Xjq3P" id="1uXWfcRzTa1" role="2Oq$k0" />
+              <node concept="2OwXpG" id="1uXWfcRzT9G" role="2OqNvi">
+                <ref role="2Oxat5" node="1uXWfcRzQ0V" resolve="returnValue" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="1uXWfcRzQ15" role="37vLTx">
+              <ref role="3cqZAo" node="1uXWfcRzPk6" resolve="returnValue" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="1uXWfcRzPk6" role="3clF46">
+        <property role="TrG5h" value="returnValue" />
+        <property role="3TUv4t" value="true" />
+        <node concept="3uibUv" id="1uXWfcRzPk5" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1uXWfcRzS1b" role="jymVt" />
+    <node concept="3clFb_" id="1uXWfcRzU0t" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getReturnValue" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="1uXWfcRzU0w" role="3clF47">
+        <node concept="3cpWs6" id="1uXWfcRzUar" role="3cqZAp">
+          <node concept="2OqwBi" id="1uXWfcRzUBS" role="3cqZAk">
+            <node concept="Xjq3P" id="1uXWfcRzUjA" role="2Oq$k0" />
+            <node concept="2OwXpG" id="1uXWfcRzVeA" role="2OqNvi">
+              <ref role="2Oxat5" node="1uXWfcRzQ0V" resolve="returnValue" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1uXWfcRzTsi" role="1B3o_S" />
+      <node concept="3uibUv" id="1uXWfcRzT_U" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="1uXWfcRzNDm" role="1B3o_S" />
+    <node concept="3uibUv" id="1uXWfcRzOTc" role="1zkMxy">
+      <ref role="3uigEE" node="1uXWfcRzKSa" resolve="TruffleInterpreterControlFlowException" />
     </node>
   </node>
 </model>
