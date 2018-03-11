@@ -81,6 +81,7 @@
         <reference id="2256443781830799517" name="feature" index="8YoWR" />
       </concept>
       <concept id="2256443781831035240" name="com.mbeddr.platform.interpreter.truffle.structure.TypeGuard" flags="ng" index="8Zvr2" />
+      <concept id="1710788360859663373" name="com.mbeddr.platform.interpreter.truffle.structure.EvaluateStatement" flags="ng" index="xl4NY" />
       <concept id="7125548326422991013" name="com.mbeddr.platform.interpreter.truffle.structure.InterpreterReturnStatement" flags="ng" index="1oGlzm" />
       <concept id="7125548326422876474" name="com.mbeddr.platform.interpreter.truffle.structure.SimpleSpecialization" flags="ng" index="1oGT_9">
         <child id="7125548326422879594" name="body" index="1oGTkp" />
@@ -636,10 +637,8 @@
       <node concept="1oGT_9" id="6bz27cUkdoM" role="8xppD">
         <node concept="8Y6ed" id="6bz27cUkdoQ" role="1oGTkp">
           <node concept="3clFbS" id="6bz27cUkdoU" role="2VODD2">
-            <node concept="3clFbF" id="6bz27cUkdPh" role="3cqZAp">
-              <node concept="8Ysti" id="6bz27cUkdPg" role="3clFbG">
-                <ref role="8YoWR" to="57mi:1XgvUCnx03V" resolve="statements" />
-              </node>
+            <node concept="xl4NY" id="1uXWfcR2kxX" role="3cqZAp">
+              <ref role="8YoWR" to="57mi:1XgvUCnx03V" resolve="statements" />
             </node>
           </node>
         </node>

@@ -216,14 +216,14 @@
     </node>
   </node>
   <node concept="1YbPZF" id="1XgvUCnHvFp">
-    <property role="TrG5h" value="typeof_EvaluateExpression" />
+    <property role="TrG5h" value="typeof_IEvaluateCall" />
     <property role="3GE5qa" value="expression" />
     <node concept="3clFbS" id="1XgvUCnHvFq" role="18ibNy">
       <node concept="1Z5TYs" id="6bz27cUMNI7" role="3cqZAp">
         <node concept="mw_s8" id="6bz27cUMNN1" role="1ZfhKB">
           <node concept="2OqwBi" id="6bz27cUMNWm" role="mwGJk">
             <node concept="1YBJjd" id="6bz27cUMNMZ" role="2Oq$k0">
-              <ref role="1YBMHb" node="1XgvUCnHvFs" resolve="evaluateExpression" />
+              <ref role="1YBMHb" node="1XgvUCnHvFs" resolve="iEvaluateCall" />
             </node>
             <node concept="2qgKlT" id="6bz27cUMOhd" role="2OqNvi">
               <ref role="37wK5l" to="s5mq:6bz27cUMFWn" resolve="getJavaType" />
@@ -233,15 +233,15 @@
         <node concept="mw_s8" id="6bz27cUMNIa" role="1ZfhK$">
           <node concept="1Z2H0r" id="6bz27cUMNk6" role="mwGJk">
             <node concept="1YBJjd" id="6bz27cUMNqu" role="1Z2MuG">
-              <ref role="1YBMHb" node="1XgvUCnHvFs" resolve="evaluateExpression" />
+              <ref role="1YBMHb" node="1XgvUCnHvFs" resolve="iEvaluateCall" />
             </node>
           </node>
         </node>
       </node>
     </node>
     <node concept="1YaCAy" id="1XgvUCnHvFs" role="1YuTPh">
-      <property role="TrG5h" value="evaluateExpression" />
-      <ref role="1YaFvo" to="9j3q:1XgvUCnErzS" resolve="EvaluateExpression" />
+      <property role="TrG5h" value="iEvaluateCall" />
+      <ref role="1YaFvo" to="9j3q:1uXWfcQUv3I" resolve="IEvaluateCall" />
     </node>
   </node>
   <node concept="1YbPZF" id="1XgvUCnLQV_">

@@ -383,8 +383,8 @@
     <property role="34LRSv" value="#&lt;{feature}&gt;" />
     <property role="3GE5qa" value="expression" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
-    <node concept="PrWs8" id="1XgvUCnFsba" role="PzmwI">
-      <ref role="PrY4T" node="1XgvUCnFpZT" resolve="IFeatureReference" />
+    <node concept="PrWs8" id="1uXWfcQUxFf" role="PzmwI">
+      <ref role="PrY4T" node="1uXWfcQUv3I" resolve="IEvaluateCall" />
     </node>
   </node>
   <node concept="1TIwiD" id="1XgvUCnFi1S">
@@ -651,6 +651,24 @@
       <node concept="tn0Fv" id="6bz27cURpx3" role="HhnKV">
         <property role="tnX3d" value="true" />
       </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1uXWfcQUrKd">
+    <property role="EcuMT" value="1710788360859663373" />
+    <property role="3GE5qa" value="expression" />
+    <property role="TrG5h" value="EvaluateStatement" />
+    <property role="34LRSv" value="#&lt;{feature}&gt;" />
+    <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
+    <node concept="PrWs8" id="1uXWfcQUxp_" role="PzmwI">
+      <ref role="PrY4T" node="1uXWfcQUv3I" resolve="IEvaluateCall" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1uXWfcQUv3I">
+    <property role="EcuMT" value="1710788360859676910" />
+    <property role="3GE5qa" value="expression" />
+    <property role="TrG5h" value="IEvaluateCall" />
+    <node concept="PrWs8" id="1uXWfcQUwQj" role="PrDN$">
+      <ref role="PrY4T" node="1XgvUCnFpZT" resolve="IFeatureReference" />
     </node>
   </node>
 </model>
