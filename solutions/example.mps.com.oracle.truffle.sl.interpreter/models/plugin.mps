@@ -81,6 +81,7 @@
         <reference id="2256443781830799517" name="feature" index="8YoWR" />
       </concept>
       <concept id="2256443781831035240" name="com.mbeddr.platform.interpreter.truffle.structure.TypeGuard" flags="ng" index="8Zvr2" />
+      <concept id="1710788360877160996" name="com.mbeddr.platform.interpreter.truffle.structure.EvaluateIndexedExpression" flags="ng" index="wikFn" />
       <concept id="1710788360859663373" name="com.mbeddr.platform.interpreter.truffle.structure.EvaluateStatement" flags="ng" index="xl4NY" />
       <concept id="7125548326422991013" name="com.mbeddr.platform.interpreter.truffle.structure.InterpreterReturnStatement" flags="ng" index="1oGlzm">
         <child id="1710788360870009705" name="expression" index="weAIq" />
@@ -310,8 +311,8 @@
       <ref role="8Qxqj" to="57mi:1XgvUCnwIf$" resolve="SlFunction" />
       <node concept="8Y6ed" id="1XgvUCnEhSV" role="8QwWl">
         <node concept="3clFbS" id="1XgvUCnEhSW" role="2VODD2">
-          <node concept="3clFbF" id="1XgvUCnELz$" role="3cqZAp">
-            <node concept="8Ysti" id="1XgvUCnELCq" role="3clFbG">
+          <node concept="3clFbF" id="1uXWfcRR_m2" role="3cqZAp">
+            <node concept="8Ysti" id="1uXWfcRR_m0" role="3clFbG">
               <ref role="8YoWR" to="57mi:1XgvUCnwUly" resolve="body" />
             </node>
           </node>
@@ -715,7 +716,7 @@
                 </node>
                 <node concept="liA8E" id="6bz27cUjBuf" role="2OqNvi">
                   <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.Object):void" resolve="println" />
-                  <node concept="8Ysti" id="6bz27cUjCIO" role="37wK5m">
+                  <node concept="wikFn" id="1uXWfcRXVNq" role="37wK5m">
                     <ref role="8YoWR" to="57mi:1XgvUCnxN2Z" resolve="arguments" />
                   </node>
                 </node>

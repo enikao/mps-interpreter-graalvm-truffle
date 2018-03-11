@@ -358,5 +358,14 @@
       <ref role="1YaFvo" to="9j3q:6bz27cUl2or" resolve="InterpreterInvokeExpression" />
     </node>
   </node>
+  <node concept="1YbPZF" id="1uXWfcRXsvS">
+    <property role="TrG5h" value="typeof_EvaluateIndexedExpression" />
+    <property role="3GE5qa" value="expression" />
+    <node concept="3clFbS" id="1uXWfcRXsvT" role="18ibNy" />
+    <node concept="1YaCAy" id="1uXWfcRXsvV" role="1YuTPh">
+      <property role="TrG5h" value="evaluateIndexedExpression" />
+      <ref role="1YaFvo" to="9j3q:1uXWfcRXbC$" resolve="EvaluateIndexedExpression" />
+    </node>
+  </node>
 </model>
 
