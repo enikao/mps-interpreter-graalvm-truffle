@@ -694,5 +694,22 @@
       <ref role="PrY4T" node="1uXWfcQUv3I" resolve="IEvaluateCall" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1uXWfcSifqe">
+    <property role="EcuMT" value="1710788360882681486" />
+    <property role="3GE5qa" value="expression" />
+    <property role="TrG5h" value="EvaluatorType" />
+    <property role="34LRSv" value="#&lt;{&lt;evaluator&gt;}&gt;" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
+    <node concept="1TJgyj" id="1uXWfcSiiHT" role="1TKVEi">
+      <property role="IQ2ns" value="1710788360882695033" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="evaluator" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1XgvUCnykjY" resolve="RootEvaluator" />
+    </node>
+    <node concept="PrWs8" id="1uXWfcSihSZ" role="PzmwI">
+      <ref role="PrY4T" to="tpee:6r77ob2URXY" resolve="IClassifierType" />
+    </node>
+  </node>
 </model>
 
