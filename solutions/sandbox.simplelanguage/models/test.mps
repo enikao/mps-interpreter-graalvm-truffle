@@ -46,6 +46,19 @@
   </registry>
   <node concept="8OGDL" id="1XgvUCnxFXA">
     <property role="TrG5h" value="ModuleTest" />
+    <node concept="8ODLe" id="12$EqQflujT" role="8OE8G">
+      <property role="TrG5h" value="func" />
+      <node concept="8PkiO" id="12$EqQflwOg" role="8OXF8">
+        <node concept="8Pmhk" id="12$EqQflwXb" role="8Pj$i">
+          <node concept="8PavD" id="12$EqQflxf3" role="8PnDJ">
+            <property role="8Pa68" value="10" />
+          </node>
+          <node concept="8PavD" id="12$EqQflxxg" role="8Pnql">
+            <property role="8Pa68" value="5" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="8ODLe" id="1XgvUCnxG4G" role="8OE8G">
       <property role="TrG5h" value="main" />
       <node concept="8PM3D" id="1XgvUCnxTa1" role="8OXF8">
@@ -54,7 +67,7 @@
             <property role="8Pa68" value="1" />
           </node>
           <node concept="8PavD" id="G37MaUkSz2" role="8Pnql">
-            <property role="8Pa68" value="2" />
+            <property role="8Pa68" value="5" />
           </node>
         </node>
       </node>

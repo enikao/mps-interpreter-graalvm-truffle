@@ -110,6 +110,8 @@
     <property role="EcuMT" value="2256443781828299578" />
     <property role="TrG5h" value="SlStatement" />
     <property role="3GE5qa" value="statement" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="1XgvUCnwZfM">

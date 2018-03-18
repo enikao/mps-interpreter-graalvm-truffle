@@ -84,7 +84,9 @@
         <reference id="2256443781830799517" name="feature" index="8YoWR" />
       </concept>
       <concept id="2256443781831035240" name="com.mbeddr.platform.interpreter.truffle.structure.TypeGuard" flags="ng" index="8Zvr2" />
-      <concept id="1710788360877160996" name="com.mbeddr.platform.interpreter.truffle.structure.EvaluateIndexedExpression" flags="ng" index="wikFn" />
+      <concept id="1710788360877160996" name="com.mbeddr.platform.interpreter.truffle.structure.EvaluateIndexedExpression" flags="ng" index="wikFn">
+        <child id="1710788360877185908" name="index" index="wieI7" />
+      </concept>
       <concept id="1710788360859663373" name="com.mbeddr.platform.interpreter.truffle.structure.EvaluateStatement" flags="ng" index="xl4NY" />
       <concept id="7125548326422991013" name="com.mbeddr.platform.interpreter.truffle.structure.InterpreterReturnStatement" flags="ng" index="1oGlzm">
         <child id="1710788360870009705" name="expression" index="weAIq" />
@@ -180,6 +182,9 @@
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
+      </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
@@ -781,6 +786,9 @@
                   <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.Object):void" resolve="println" />
                   <node concept="wikFn" id="1uXWfcRXVNq" role="37wK5m">
                     <ref role="8YoWR" to="57mi:1XgvUCnxN2Z" resolve="arguments" />
+                    <node concept="3cmrfG" id="5LEPoPMtYxf" role="wieI7">
+                      <property role="3cmrfH" value="0" />
+                    </node>
                   </node>
                 </node>
               </node>
