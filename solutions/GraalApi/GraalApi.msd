@@ -34,6 +34,9 @@
       <sourceRoot location="truffle-nfi.src.zip" />
       <sourceRoot location="truffle-tck.src.zip" />
     </modelRoot>
+    <modelRoot contentPath="${module}/libs/truffle-dsl-processor.jar!" type="java_classes">
+      <sourceRoot location="." />
+    </modelRoot>
   </models>
   <stubModelEntries>
     <stubModelEntry path="${module}/libs/truffle-api.jar" />
@@ -41,6 +44,7 @@
     <stubModelEntry path="${module}/libs/graal.jar" />
     <stubModelEntry path="${module}/libs/locator.jar" />
     <stubModelEntry path="${module}/libs/truffle-nfi.jar" />
+    <stubModelEntry path="${module}/libs/truffle-dsl-processor.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>

@@ -84,10 +84,10 @@
   <node concept="3h69fF" id="1gwtcV5enS1">
     <property role="TrG5h" value="Test" />
     <node concept="3h69f$" id="1gwtcV5enS2" role="3h69fA">
-      <property role="3OnndV" value="function main() { println(3 + 4); }" />
+      <property role="3OnndV" value="function main() { return println(3 + 4); }" />
     </node>
     <node concept="3h69f$" id="3Mbqk0xaBqZ" role="3h69fA">
-      <property role="3OnndV" value="function main() { println(fac(200)); } function fac(x) { if (x == 0) { return 1; } else { return x * fac(x-1); }}" />
+      <property role="3OnndV" value="function main() { return(fac(200)); } function fac(x) { if (x == 0) { return 1; } else { return x * fac(x-1); }}" />
     </node>
   </node>
   <node concept="312cEu" id="5s7ADhjaARM">

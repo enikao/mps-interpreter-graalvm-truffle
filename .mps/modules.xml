@@ -10,6 +10,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/GraalTestSrc/GraalTestSrc.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/NewLanguage.runtime/NewLanguage.runtime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/NewSolution/NewSolution.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/TestCustomJavaFacet/TestCustomJavaFacet.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.platform.interpreter.truffle.runtime/com.mbeddr.platform.interpreter.truffle.runtime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/example.mps.com.oracle.truffle.sl.interpreter/example.mps.com.oracle.truffle.sl.interpreter.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/sandbox.simplelanguage/sandbox.simplelanguage.msd" folder="" />

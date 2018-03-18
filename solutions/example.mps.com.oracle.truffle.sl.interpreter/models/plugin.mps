@@ -13,6 +13,8 @@
     <import index="57mi" ref="r:90d52bcd-2f7b-41e8-919b-1d6d378b2192(example.mps.com.oracle.truffle.sl.structure)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="jkw8" ref="f8d5216a-c767-462a-9290-97f1f33a0497/java:com.oracle.truffle.api.interop(GraalApi/)" />
+    <import index="a7wy" ref="r:7eb9f25a-4959-4030-8029-b43a52fbbcc2(TestCustomJavaFacet.plugin)" />
+    <import index="acg0" ref="f8d5216a-c767-462a-9290-97f1f33a0497/java:com.oracle.truffle.dsl.processor(GraalApi/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
@@ -208,6 +210,9 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="1221737317277" name="jetbrains.mps.baseLanguage.structure.StaticInitializer" flags="lg" index="1Pe0a1">
+        <child id="1221737317278" name="statementList" index="1Pe0a2" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
     </language>
@@ -224,10 +229,10 @@
   </registry>
   <node concept="2DaZZR" id="1XgvUCnyi81" />
   <node concept="8bKx9" id="1XgvUCn_O$$">
-    <property role="TrG5h" value="SL" />
-    <property role="8OkaH" value="application/x-sl" />
-    <property role="8Ok5J" value="0.12" />
-    <property role="8OizZ" value="sl" />
+    <property role="TrG5h" value="SLx" />
+    <property role="8OkaH" value="application/x-slx" />
+    <property role="8Ok5J" value="0.1" />
+    <property role="8OizZ" value="slx" />
     <node concept="8K9hy" id="1XgvUCnB9qf" role="8LZ1G">
       <ref role="8K8ST" to="57mi:1XgvUCnz5Sp" resolve="SlBigIntegerType" />
       <node concept="3uibUv" id="1XgvUCnB9_S" role="8KnIe">
@@ -802,6 +807,32 @@
       </node>
       <node concept="2AHcQZ" id="6bz27cUmx9z" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7vr_R3e2IRV" role="jymVt" />
+    <node concept="1Pe0a1" id="7vr_R3e32vF" role="jymVt">
+      <node concept="3clFbS" id="7vr_R3e32vH" role="1Pe0a2">
+        <node concept="3clFbF" id="7vr_R3e37$v" role="3cqZAp">
+          <node concept="2OqwBi" id="7vr_R3e37$s" role="3clFbG">
+            <node concept="10M0yZ" id="7vr_R3e37$t" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="7vr_R3e37$u" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="2OqwBi" id="7vr_R3e3YTc" role="37wK5m">
+                <node concept="2ShNRf" id="7vr_R3e3XVx" role="2Oq$k0">
+                  <node concept="1pGfFk" id="7vr_R3e3YAY" role="2ShVmc">
+                    <ref role="37wK5l" to="acg0:~TruffleProcessor.&lt;init&gt;()" resolve="TruffleProcessor" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="7vr_R3e3ZCH" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="6bz27cUmp5D" role="1B3o_S" />

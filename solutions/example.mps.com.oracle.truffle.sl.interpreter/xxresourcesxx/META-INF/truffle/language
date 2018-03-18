@@ -1,0 +1,8 @@
+language1.className=example.mps.com.oracle.truffle.sl.interpreter.plugin.SLxLanguage
+language1.id=slx
+language1.implementationName=
+language1.interactive=true
+language1.internal=false
+language1.mimeType.0=application/x-slx
+language1.name=SLx
+language1.version=0.1

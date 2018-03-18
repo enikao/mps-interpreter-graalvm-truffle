@@ -8,6 +8,8 @@
   <imports>
     <import index="yiuw" ref="f8d5216a-c767-462a-9290-97f1f33a0497/java:com.oracle.truffle.api.frame(GraalApi/)" />
     <import index="b0os" ref="f8d5216a-c767-462a-9290-97f1f33a0497/java:com.oracle.truffle.api.nodes(GraalApi/)" />
+    <import index="bzsg" ref="f8d5216a-c767-462a-9290-97f1f33a0497/java:com.oracle.truffle.api.source(GraalApi/)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -33,7 +35,12 @@
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
       <concept id="1070475587102" name="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" flags="nn" index="XkiVB" />
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
+      <concept id="1070534555686" name="jetbrains.mps.baseLanguage.structure.CharType" flags="in" index="10Pfzv" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
+      <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
+        <child id="1070534760952" name="componentType" index="10Q1$1" />
+      </concept>
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
         <child id="1070534934092" name="expression" index="10QFUP" />
@@ -59,6 +66,7 @@
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <property id="4276006055363816570" name="isSynchronized" index="od$2w" />
         <property id="1181808852946" name="isFinal" index="DiZV1" />
+        <child id="1164879685961" name="throwsItem" index="Sfmx6" />
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
@@ -73,6 +81,9 @@
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
+      </concept>
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -403,6 +414,118 @@
     <node concept="3Tm1VV" id="1uXWfcRzNDm" role="1B3o_S" />
     <node concept="3uibUv" id="1uXWfcRzOTc" role="1zkMxy">
       <ref role="3uigEE" node="1uXWfcRzKSa" resolve="TruffleInterpreterControlFlowException" />
+    </node>
+  </node>
+  <node concept="312cEu" id="1IlQghO3BN5">
+    <property role="TrG5h" value="MpsReader" />
+    <node concept="312cEg" id="1IlQghO3Gjt" role="jymVt">
+      <property role="TrG5h" value="node" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm6S6" id="1IlQghO3Gju" role="1B3o_S" />
+      <node concept="3Tqbb2" id="1IlQghO3Gjw" role="1tU5fm" />
+    </node>
+    <node concept="2tJIrI" id="1IlQghO3HE5" role="jymVt" />
+    <node concept="3clFbW" id="1IlQghO3FJq" role="jymVt">
+      <node concept="3cqZAl" id="1IlQghO3FJs" role="3clF45" />
+      <node concept="3Tm1VV" id="1IlQghO3FJt" role="1B3o_S" />
+      <node concept="3clFbS" id="1IlQghO3FJu" role="3clF47">
+        <node concept="XkiVB" id="1IlQghO3Kys" role="3cqZAp">
+          <ref role="37wK5l" to="guwi:~Reader.&lt;init&gt;()" resolve="Reader" />
+        </node>
+        <node concept="3clFbF" id="1IlQghO3Gjx" role="3cqZAp">
+          <node concept="37vLTI" id="1IlQghO3Gjz" role="3clFbG">
+            <node concept="2OqwBi" id="1IlQghO3JGd" role="37vLTJ">
+              <node concept="Xjq3P" id="1IlQghO3HNG" role="2Oq$k0" />
+              <node concept="2OwXpG" id="1IlQghO3K4K" role="2OqNvi">
+                <ref role="2Oxat5" node="1IlQghO3Gjt" resolve="node" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="1IlQghO3GjB" role="37vLTx">
+              <ref role="3cqZAo" node="1IlQghO3FS$" resolve="node" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="1IlQghO3FS$" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="1IlQghO3FSz" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1IlQghO3P1d" role="jymVt" />
+    <node concept="3clFb_" id="1IlQghO3RtR" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getNode" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="1IlQghO3RtU" role="3clF47">
+        <node concept="3clFbF" id="1IlQghO3RPg" role="3cqZAp">
+          <node concept="2OqwBi" id="1IlQghO3S9L" role="3clFbG">
+            <node concept="Xjq3P" id="1IlQghO3RPf" role="2Oq$k0" />
+            <node concept="2OwXpG" id="1IlQghO3Sp$" role="2OqNvi">
+              <ref role="2Oxat5" node="1IlQghO3Gjt" resolve="node" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1IlQghO3QNf" role="1B3o_S" />
+      <node concept="3Tqbb2" id="1IlQghO3R9Z" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="1IlQghO3Q_m" role="jymVt" />
+    <node concept="3Tm1VV" id="1IlQghO3BN6" role="1B3o_S" />
+    <node concept="3uibUv" id="1IlQghO3CUz" role="1zkMxy">
+      <ref role="3uigEE" to="guwi:~Reader" resolve="Reader" />
+    </node>
+    <node concept="3clFb_" id="1IlQghO3OKW" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="read" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="1IlQghO3OKX" role="1B3o_S" />
+      <node concept="10Oyi0" id="1IlQghO3OKZ" role="3clF45" />
+      <node concept="37vLTG" id="1IlQghO3OL0" role="3clF46">
+        <property role="TrG5h" value="array" />
+        <node concept="10Q1$e" id="1IlQghO3OL1" role="1tU5fm">
+          <node concept="10Pfzv" id="1IlQghO3OL2" role="10Q1$1" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="1IlQghO3OL3" role="3clF46">
+        <property role="TrG5h" value="i" />
+        <node concept="10Oyi0" id="1IlQghO3OL4" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="1IlQghO3OL5" role="3clF46">
+        <property role="TrG5h" value="i1" />
+        <node concept="10Oyi0" id="1IlQghO3OL6" role="1tU5fm" />
+      </node>
+      <node concept="3uibUv" id="1IlQghO3OL7" role="Sfmx6">
+        <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
+      </node>
+      <node concept="3clFbS" id="1IlQghO3OL8" role="3clF47">
+        <node concept="3clFbF" id="1IlQghO3P_R" role="3cqZAp">
+          <node concept="3cmrfG" id="1IlQghO3P_Q" role="3clFbG">
+            <property role="3cmrfH" value="0" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="1IlQghO3OL9" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1IlQghO3Pf1" role="jymVt" />
+    <node concept="3clFb_" id="1IlQghO3OLa" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="close" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="1IlQghO3OLb" role="1B3o_S" />
+      <node concept="3cqZAl" id="1IlQghO3OLd" role="3clF45" />
+      <node concept="3uibUv" id="1IlQghO3OLe" role="Sfmx6">
+        <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
+      </node>
+      <node concept="3clFbS" id="1IlQghO3OLf" role="3clF47" />
+      <node concept="2AHcQZ" id="1IlQghO3OLg" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
     </node>
   </node>
 </model>
