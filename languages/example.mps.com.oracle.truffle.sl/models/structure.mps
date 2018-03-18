@@ -343,5 +343,19 @@
     <property role="34LRSv" value="==" />
     <ref role="1TJDcQ" node="1XgvUCnzmSh" resolve="SlBinaryBoolean" />
   </node>
+  <node concept="1TIwiD" id="yrqUwlFEX3">
+    <property role="EcuMT" value="620207743356022595" />
+    <property role="3GE5qa" value="expression" />
+    <property role="TrG5h" value="SlParens" />
+    <property role="34LRSv" value="(" />
+    <ref role="1TJDcQ" node="1XgvUCnwV2_" resolve="SlExpression" />
+    <node concept="1TJgyj" id="yrqUwlFGdx" role="1TKVEi">
+      <property role="IQ2ns" value="620207743356027745" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1XgvUCnwV2_" resolve="SlExpression" />
+    </node>
+  </node>
 </model>
 

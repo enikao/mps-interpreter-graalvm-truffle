@@ -7,10 +7,11 @@
   </models>
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">fc7afa9e-31d8-4e6d-9ac0-b707766a394d(example.mps.com.oracle.truffle.sl)</dependency>
-    <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
-    <dependency reexport="false">f8d5216a-c767-462a-9290-97f1f33a0497(GraalApi)</dependency>
-    <dependency reexport="false">e9e296da-35b4-4be7-905f-172ac90d8c8a(TestCustomJavaFacet)</dependency>
+    <dependency reexport="true">fc7afa9e-31d8-4e6d-9ac0-b707766a394d(example.mps.com.oracle.truffle.sl)</dependency>
+    <dependency reexport="true">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+    <dependency reexport="true">f8d5216a-c767-462a-9290-97f1f33a0497(GraalApi)</dependency>
+    <dependency reexport="true">e9e296da-35b4-4be7-905f-172ac90d8c8a(TestCustomJavaFacet)</dependency>
+    <dependency reexport="true">b1386b36-e9d6-4d78-bf0d-934db9faf0a5(com.mbeddr.platform.interpreter.truffle.runtime)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:73780afc-f2ef-4c4c-b03a-548a35211344:com.mbeddr.platform.interpreter.truffle" version="0" />
@@ -33,6 +34,7 @@
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="e9e296da-35b4-4be7-905f-172ac90d8c8a(TestCustomJavaFacet)" version="0" />
+    <module reference="b1386b36-e9d6-4d78-bf0d-934db9faf0a5(com.mbeddr.platform.interpreter.truffle.runtime)" version="0" />
     <module reference="fc7afa9e-31d8-4e6d-9ac0-b707766a394d(example.mps.com.oracle.truffle.sl)" version="0" />
     <module reference="a2f5741b-6105-4ac7-8ca0-eba4e80c2e40(example.mps.com.oracle.truffle.sl.interpreter)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_9" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/languages/com.mbeddr.platform.interpreter.truffle/source_gen" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/languages/example.mps.com.oracle.truffle.sl/source_gen" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/languages/NewLanguage/source_gen" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/solutions/com.mbeddr.platform.interpreter.truffle.runtime/source_gen" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/solutions/example.mps.com.oracle.truffle.sl.interpreter/source_gen" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/solutions/GraalTest/source_gen" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/solutions/NewLanguage.runtime/source_gen" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/solutions/NewSolution/source_gen" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/solutions/TestCustomJavaFacet/source_gen" isTestSource="false" />
+    </content>
+    <orderEntry type="jdk" jdkName="9.0" jdkType="JavaSDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="openapi" />
+    <orderEntry type="module" module-name="editor-api" />
+    <orderEntry type="module" module-name="intentions-runtime" />
+    <orderEntry type="module" module-name="smodel" />
+    <orderEntry type="module" module-name="gensources" />
+    <orderEntry type="module" module-name="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/solutions/GraalApi/libs/graal-sdk.jar!/" />
+          <root url="jar://$MODULE_DIR$/solutions/GraalApi/libs/graaljs-launcher.jar!/" />
+          <root url="jar://$MODULE_DIR$/solutions/GraalApi/libs/graalpython-launcher.jar!/" />
+          <root url="jar://$MODULE_DIR$/solutions/GraalApi/libs/graalvm-launchers.jar!/" />
+          <root url="jar://$MODULE_DIR$/solutions/GraalApi/libs/jvmci-api.jar!/" />
+          <root url="jar://$MODULE_DIR$/solutions/GraalApi/libs/jvmci-hotspot.jar!/" />
+          <root url="jar://$MODULE_DIR$/solutions/GraalApi/libs/launcher-common.jar!/" />
+          <root url="jar://$MODULE_DIR$/solutions/GraalApi/libs/locator.jar!/" />
+          <root url="jar://$MODULE_DIR$/solutions/GraalApi/libs/truffle-api.jar!/" />
+          <root url="jar://$MODULE_DIR$/solutions/GraalApi/libs/truffle-dsl-processor.jar!/" />
+          <root url="jar://$MODULE_DIR$/solutions/GraalApi/libs/truffle-nfi.jar!/" />
+          <root url="jar://$MODULE_DIR$/solutions/GraalApi/libs/truffle-tck.jar!/" />
+          <root url="jar://$MODULE_DIR$/solutions/GraalApi/libs/graal.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/solutions/GraalApi/libs/graal-sdk.src.zip!/" />
+          <root url="jar://$MODULE_DIR$/solutions/GraalApi/libs/graal.src.zip!/" />
+          <root url="jar://$MODULE_DIR$/solutions/GraalApi/libs/graaljs-launcher.src.zip!/" />
+          <root url="jar://$MODULE_DIR$/solutions/GraalApi/libs/graalpython-launcher.src.zip!/" />
+          <root url="jar://$MODULE_DIR$/solutions/GraalApi/libs/graalvm-launchers.src.zip!/" />
+          <root url="jar://$MODULE_DIR$/solutions/GraalApi/libs/jvmci-api.src.zip!/" />
+          <root url="jar://$MODULE_DIR$/solutions/GraalApi/libs/jvmci-hotspot.src.zip!/" />
+          <root url="jar://$MODULE_DIR$/solutions/GraalApi/libs/launcher-common.src.zip!/" />
+          <root url="jar://$MODULE_DIR$/solutions/GraalApi/libs/locator.src.zip!/" />
+          <root url="jar://$MODULE_DIR$/solutions/GraalApi/libs/truffle-api.src.zip!/" />
+          <root url="jar://$MODULE_DIR$/solutions/GraalApi/libs/truffle-dsl-processor.src.zip!/" />
+          <root url="jar://$MODULE_DIR$/solutions/GraalApi/libs/truffle-nfi.src.zip!/" />
+          <root url="jar://$MODULE_DIR$/solutions/GraalApi/libs/truffle-tck.src.zip!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="kernel" />
+    <orderEntry type="library" name="IDEA runtime jars" level="project" />
+  </component>
+</module>
