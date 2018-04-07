@@ -1139,13 +1139,8 @@
                                 <node concept="3clFbS" id="6h2hXD2W3FR" role="9aQI4">
                                   <node concept="2xdQw9" id="6h2hXD2W3FS" role="3cqZAp">
                                     <property role="2xdLsb" value="error" />
-                                    <node concept="2OqwBi" id="6h2hXD2W3FT" role="9lYJi">
-                                      <node concept="37vLTw" id="6h2hXD2W3FU" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="6h2hXD2W3Fz" resolve="ex" />
-                                      </node>
-                                      <node concept="liA8E" id="6h2hXD2W3FV" role="2OqNvi">
-                                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
-                                      </node>
+                                    <node concept="37vLTw" id="6h2hXD2W3FU" role="9lYJi">
+                                      <ref role="3cqZAo" node="6h2hXD2W3Fz" resolve="ex" />
                                     </node>
                                     <node concept="37vLTw" id="6h2hXD2W3FW" role="9lYJj">
                                       <ref role="3cqZAo" node="6h2hXD2W3Fz" resolve="ex" />

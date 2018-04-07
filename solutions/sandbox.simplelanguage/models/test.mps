@@ -28,6 +28,9 @@
       <concept id="2256443781828368451" name="example.mps.com.oracle.truffle.sl.structure.SlLongLiteral" flags="ng" index="8PavD">
         <property id="2256443781828369954" name="value" index="8Pa68" />
       </concept>
+      <concept id="2256443781828406132" name="example.mps.com.oracle.truffle.sl.structure.SLInvoke" flags="ng" index="8Phju">
+        <reference id="2256443781828408391" name="function" index="8PgJH" />
+      </concept>
       <concept id="2256443781828393758" name="example.mps.com.oracle.truffle.sl.structure.SlReturn" flags="ng" index="8PkiO">
         <child id="2256443781828396728" name="value" index="8Pj$i" />
       </concept>
@@ -49,12 +52,25 @@
     <node concept="8ODLe" id="12$EqQflujT" role="8OE8G">
       <property role="TrG5h" value="func" />
       <node concept="8PkiO" id="12$EqQflwOg" role="8OXF8">
-        <node concept="8Pmhk" id="12$EqQflwXb" role="8Pj$i">
-          <node concept="8PavD" id="12$EqQflxf3" role="8PnDJ">
+        <node concept="8Pmhk" id="6I2sTc785QV" role="8Pj$i">
+          <node concept="8Phju" id="6I2sTc785TL" role="8PnDJ">
+            <ref role="8PgJH" node="3tWyi05205D" resolve="func2" />
+          </node>
+          <node concept="8PavD" id="6I2sTc7861i" role="8Pnql">
             <property role="8Pa68" value="10" />
           </node>
-          <node concept="8PavD" id="12$EqQflxxg" role="8Pnql">
-            <property role="8Pa68" value="5" />
+        </node>
+      </node>
+    </node>
+    <node concept="8ODLe" id="3tWyi05205D" role="8OE8G">
+      <property role="TrG5h" value="func2" />
+      <node concept="8PkiO" id="3tWyi0520d6" role="8OXF8">
+        <node concept="8Pmhk" id="3tWyi0520mq" role="8Pj$i">
+          <node concept="8PavD" id="3tWyi0520oY" role="8PnDJ">
+            <property role="8Pa68" value="100" />
+          </node>
+          <node concept="8PavD" id="3tWyi0520wK" role="8Pnql">
+            <property role="8Pa68" value="3" />
           </node>
         </node>
       </node>
