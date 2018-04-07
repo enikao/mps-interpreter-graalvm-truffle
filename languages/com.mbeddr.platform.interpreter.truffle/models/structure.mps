@@ -107,6 +107,12 @@
       <property role="20kJfa" value="nothingValue" />
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
+    <node concept="1TJgyj" id="rSaJgN78lA" role="1TKVEi">
+      <property role="IQ2ns" value="502198586769704294" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="baseObjectType" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
     <node concept="PrWs8" id="1XgvUCnvRM4" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -709,6 +715,41 @@
     </node>
     <node concept="PrWs8" id="1uXWfcSihSZ" role="PzmwI">
       <ref role="PrY4T" to="tpee:6r77ob2URXY" resolve="IClassifierType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="rSaJgNauVX">
+    <property role="EcuMT" value="502198586770583293" />
+    <property role="3GE5qa" value="expression" />
+    <property role="TrG5h" value="ContextExpression" />
+    <property role="34LRSv" value="#context" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="rSaJgNeJRZ">
+    <property role="EcuMT" value="502198586771701247" />
+    <property role="3GE5qa" value="expression" />
+    <property role="TrG5h" value="ObjectExpression" />
+    <property role="34LRSv" value="#object" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="rSaJgNeL7F" role="1TKVEi">
+      <property role="IQ2ns" value="502198586771706347" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="rSaJgNlFGn">
+    <property role="EcuMT" value="502198586773519127" />
+    <property role="3GE5qa" value="expression" />
+    <property role="TrG5h" value="PropertyAccessExpression" />
+    <property role="34LRSv" value="#&lt;{property}&gt;" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="rSaJgNlItv" role="1TKVEi">
+      <property role="IQ2ns" value="502198586773530463" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="property" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpce:f_TJgxF" resolve="PropertyDeclaration" />
     </node>
   </node>
 </model>

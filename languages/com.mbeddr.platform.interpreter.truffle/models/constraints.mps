@@ -514,5 +514,43 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="rSaJgNlNWN">
+    <property role="3GE5qa" value="expression" />
+    <ref role="1M2myG" to="9j3q:rSaJgNlFGn" resolve="PropertyAccessExpression" />
+    <node concept="1N5Pfh" id="rSaJgNlOo7" role="1Mr941">
+      <ref role="1N5Vy1" to="9j3q:rSaJgNlItv" resolve="property" />
+      <node concept="3dgokm" id="rSaJgNlOo8" role="1N6uqs">
+        <node concept="3clFbS" id="rSaJgNlOo9" role="2VODD2">
+          <node concept="3clFbF" id="rSaJgNlOoa" role="3cqZAp">
+            <node concept="2YIFZM" id="rSaJgNlOob" role="3clFbG">
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+              <node concept="2OqwBi" id="rSaJgNlOod" role="37wK5m">
+                <node concept="2OqwBi" id="rSaJgNlOoe" role="2Oq$k0">
+                  <node concept="2OqwBi" id="rSaJgNlOof" role="2Oq$k0">
+                    <node concept="2rP1CM" id="rSaJgNlOog" role="2Oq$k0" />
+                    <node concept="2Xjw5R" id="rSaJgNlOoh" role="2OqNvi">
+                      <node concept="1xMEDy" id="rSaJgNlOoi" role="1xVPHs">
+                        <node concept="chp4Y" id="rSaJgNlOoj" role="ri$Ld">
+                          <ref role="cht4Q" to="9j3q:1XgvUCnwnhg" resolve="IEvaluator" />
+                        </node>
+                      </node>
+                      <node concept="1xIGOp" id="rSaJgNlOok" role="1xVPHs" />
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="rSaJgNlPNk" role="2OqNvi">
+                    <ref role="3Tt5mk" to="9j3q:1XgvUCnyA$T" resolve="target" />
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="rSaJgNlQF8" role="2OqNvi">
+                  <ref role="37wK5l" to="tpcn:hEwILLM" resolve="getPropertyDeclarations" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

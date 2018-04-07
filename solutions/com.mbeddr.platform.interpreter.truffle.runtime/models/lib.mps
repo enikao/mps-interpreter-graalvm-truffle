@@ -17,6 +17,7 @@
     <import index="jkw8" ref="f8d5216a-c767-462a-9290-97f1f33a0497/java:com.oracle.truffle.api.interop(GraalApi/)" />
     <import index="ecvt" ref="f8d5216a-c767-462a-9290-97f1f33a0497/java:com.oracle.truffle.api(GraalApi/)" />
     <import index="id5h" ref="f8d5216a-c767-462a-9290-97f1f33a0497/java:com.oracle.truffle.api.utilities(GraalApi/)" />
+    <import index="sw0k" ref="f8d5216a-c767-462a-9290-97f1f33a0497/java:com.oracle.truffle.api.object(GraalApi/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -33,6 +34,9 @@
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
+      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
+        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -43,11 +47,18 @@
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
+      <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA">
+        <property id="6468716278899126575" name="isVolatile" index="2dlcS1" />
+        <property id="6468716278899125786" name="isTransient" index="2dld4O" />
+      </concept>
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
       <concept id="1070475587102" name="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" flags="nn" index="XkiVB" />
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
@@ -106,6 +117,9 @@
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
+      </concept>
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -143,6 +157,9 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
+      <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
+        <reference id="1116615189566" name="classifier" index="3VsUkX" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="5045161044515397667" name="jetbrains.mps.lang.smodel.structure.Node_PointerOperation" flags="ng" index="iZEcu" />
@@ -625,6 +642,7 @@
   </node>
   <node concept="312cEu" id="1SLUFFTJAvf">
     <property role="TrG5h" value="BaseTruffleInterpreterCallableRegistry" />
+    <property role="1sVAO0" value="true" />
     <node concept="312cEg" id="1SLUFFTHCnh" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
@@ -1036,7 +1054,7 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="1uXWfcS6Wo$" role="3clF47" />
-      <node concept="3Tmbuc" id="1uXWfcS6Vtb" role="1B3o_S" />
+      <node concept="3Tm1VV" id="6nIsPmETQ4g" role="1B3o_S" />
       <node concept="3cqZAl" id="1uXWfcS6VX7" role="3clF45" />
       <node concept="37vLTG" id="1uXWfcS6X1D" role="3clF46">
         <property role="TrG5h" value="callTarget" />
@@ -1129,6 +1147,212 @@
     <node concept="3Tm1VV" id="OYEzOPl9nq" role="1B3o_S" />
     <node concept="3uibUv" id="OYEzOPler4" role="EKbjA">
       <ref role="3uigEE" to="jkw8:~TruffleObject" resolve="TruffleObject" />
+    </node>
+  </node>
+  <node concept="312cEu" id="6I2sTc78GV9">
+    <property role="TrG5h" value="BaseTruffleInterpreterContext" />
+    <property role="1sVAO0" value="true" />
+    <node concept="312cEg" id="6bz27cUtBSQ" role="jymVt">
+      <property role="TrG5h" value="env" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm6S6" id="6bz27cUtBSR" role="1B3o_S" />
+      <node concept="3uibUv" id="6bz27cUtBST" role="1tU5fm">
+        <ref role="3uigEE" to="ecvt:~TruffleLanguage$Env" resolve="TruffleLanguage.Env" />
+      </node>
+    </node>
+    <node concept="312cEg" id="27x4BnlxfVn" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="allocationReporter" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3uibUv" id="27x4BnlxfVp" role="1tU5fm">
+        <ref role="3uigEE" to="od2x:~AllocationReporter" resolve="AllocationReporter" />
+      </node>
+      <node concept="3Tm6S6" id="27x4BnlxfVq" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="6I2sTc78LgF" role="jymVt" />
+    <node concept="3clFbW" id="6I2sTc78Ljq" role="jymVt">
+      <node concept="3cqZAl" id="6I2sTc78Ljs" role="3clF45" />
+      <node concept="3Tm1VV" id="6I2sTc78LFt" role="1B3o_S" />
+      <node concept="3clFbS" id="6I2sTc78Lju" role="3clF47">
+        <node concept="3clFbF" id="6I2sTc78LX2" role="3cqZAp">
+          <node concept="37vLTI" id="6I2sTc78Mnx" role="3clFbG">
+            <node concept="37vLTw" id="6I2sTc78MoQ" role="37vLTx">
+              <ref role="3cqZAo" node="6I2sTc78LTI" resolve="env" />
+            </node>
+            <node concept="2OqwBi" id="6I2sTc78M1i" role="37vLTJ">
+              <node concept="Xjq3P" id="6I2sTc78LX1" role="2Oq$k0" />
+              <node concept="2OwXpG" id="6I2sTc78M99" role="2OqNvi">
+                <ref role="2Oxat5" node="6bz27cUtBSQ" resolve="env" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6I2sTc7968U" role="3cqZAp">
+          <node concept="37vLTI" id="6I2sTc796YI" role="3clFbG">
+            <node concept="2OqwBi" id="6I2sTc797bM" role="37vLTx">
+              <node concept="37vLTw" id="6I2sTc7976g" role="2Oq$k0">
+                <ref role="3cqZAo" node="6I2sTc78LTI" resolve="env" />
+              </node>
+              <node concept="liA8E" id="6I2sTc797qC" role="2OqNvi">
+                <ref role="37wK5l" to="ecvt:~TruffleLanguage$Env.lookup(java.lang.Class):java.lang.Object" resolve="lookup" />
+                <node concept="3VsKOn" id="6I2sTc798Pu" role="37wK5m">
+                  <ref role="3VsUkX" to="od2x:~AllocationReporter" resolve="AllocationReporter" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="6I2sTc796e6" role="37vLTJ">
+              <node concept="Xjq3P" id="6I2sTc7968S" role="2Oq$k0" />
+              <node concept="2OwXpG" id="6I2sTc796rp" role="2OqNvi">
+                <ref role="2Oxat5" node="27x4BnlxfVn" resolve="allocationReporter" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="6I2sTc78LTI" role="3clF46">
+        <property role="TrG5h" value="env" />
+        <node concept="3uibUv" id="6I2sTc78LTH" role="1tU5fm">
+          <ref role="3uigEE" to="ecvt:~TruffleLanguage$Env" resolve="TruffleLanguage.Env" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6I2sTc78MLK" role="jymVt" />
+    <node concept="3clFb_" id="6I2sTc799Zc" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="createObject" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="6I2sTc799Zf" role="3clF47">
+        <node concept="3cpWs8" id="6I2sTc79ahA" role="3cqZAp">
+          <node concept="3cpWsn" id="6I2sTc79ahB" role="3cpWs9">
+            <property role="TrG5h" value="result" />
+            <node concept="3uibUv" id="6I2sTc79ahC" role="1tU5fm">
+              <ref role="3uigEE" to="sw0k:~DynamicObject" resolve="DynamicObject" />
+            </node>
+            <node concept="10Nm6u" id="6I2sTc79akI" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6I2sTc79axo" role="3cqZAp">
+          <node concept="2OqwBi" id="6I2sTc79aAX" role="3clFbG">
+            <node concept="37vLTw" id="6I2sTc79axm" role="2Oq$k0">
+              <ref role="3cqZAo" node="27x4BnlxfVn" resolve="allocationReporter" />
+            </node>
+            <node concept="liA8E" id="6I2sTc79aOz" role="2OqNvi">
+              <ref role="37wK5l" to="od2x:~AllocationReporter.onEnter(java.lang.Object,long,long):void" resolve="onEnter" />
+              <node concept="10Nm6u" id="6I2sTc79aVb" role="37wK5m" />
+              <node concept="3cmrfG" id="6I2sTc79b7e" role="37wK5m">
+                <property role="3cmrfH" value="0" />
+              </node>
+              <node concept="10M0yZ" id="6I2sTc79bub" role="37wK5m">
+                <ref role="3cqZAo" to="od2x:~AllocationReporter.SIZE_UNKNOWN" resolve="SIZE_UNKNOWN" />
+                <ref role="1PxDUh" to="od2x:~AllocationReporter" resolve="AllocationReporter" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6I2sTc79bL_" role="3cqZAp">
+          <node concept="37vLTI" id="6I2sTc79cla" role="3clFbG">
+            <node concept="2OqwBi" id="6I2sTc79c_V" role="37vLTx">
+              <node concept="1rXfSq" id="6I2sTc79csa" role="2Oq$k0">
+                <ref role="37wK5l" node="6I2sTc791Fj" resolve="getEmptyShape" />
+              </node>
+              <node concept="liA8E" id="6I2sTc79cQ2" role="2OqNvi">
+                <ref role="37wK5l" to="sw0k:~Shape.newInstance():com.oracle.truffle.api.object.DynamicObject" resolve="newInstance" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="6I2sTc79bLz" role="37vLTJ">
+              <ref role="3cqZAo" node="6I2sTc79ahB" resolve="result" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6I2sTc79d3m" role="3cqZAp">
+          <node concept="2OqwBi" id="6I2sTc79dbn" role="3clFbG">
+            <node concept="37vLTw" id="6I2sTc79d3k" role="2Oq$k0">
+              <ref role="3cqZAo" node="27x4BnlxfVn" resolve="allocationReporter" />
+            </node>
+            <node concept="liA8E" id="6I2sTc79dpU" role="2OqNvi">
+              <ref role="37wK5l" to="od2x:~AllocationReporter.onReturnValue(java.lang.Object,long,long):void" resolve="onReturnValue" />
+              <node concept="37vLTw" id="6I2sTc79dyP" role="37wK5m">
+                <ref role="3cqZAo" node="6I2sTc79ahB" resolve="result" />
+              </node>
+              <node concept="3cmrfG" id="6I2sTc79dKc" role="37wK5m">
+                <property role="3cmrfH" value="0" />
+              </node>
+              <node concept="10M0yZ" id="6I2sTc79e78" role="37wK5m">
+                <ref role="3cqZAo" to="od2x:~AllocationReporter.SIZE_UNKNOWN" resolve="SIZE_UNKNOWN" />
+                <ref role="1PxDUh" to="od2x:~AllocationReporter" resolve="AllocationReporter" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="6I2sTc79eof" role="3cqZAp">
+          <node concept="37vLTw" id="6I2sTc79eoV" role="3cqZAk">
+            <ref role="3cqZAo" node="6I2sTc79ahB" resolve="result" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6I2sTc799HF" role="1B3o_S" />
+      <node concept="3uibUv" id="6I2sTc799Sb" role="3clF45">
+        <ref role="3uigEE" to="sw0k:~DynamicObject" resolve="DynamicObject" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6I2sTc799BS" role="jymVt" />
+    <node concept="3clFb_" id="6I2sTc78NjM" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="TrG5h" value="getCallableRegistry" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="6I2sTc78NjP" role="3clF47" />
+      <node concept="3Tm1VV" id="6I2sTc78MPR" role="1B3o_S" />
+      <node concept="3uibUv" id="6I2sTc78N3g" role="3clF45">
+        <ref role="3uigEE" node="1SLUFFTJAvf" resolve="BaseTruffleInterpreterCallableRegistry" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6I2sTc791oK" role="jymVt" />
+    <node concept="3clFb_" id="6I2sTc791Fj" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="TrG5h" value="getEmptyShape" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="6I2sTc791Fm" role="3clF47" />
+      <node concept="3Tmbuc" id="6I2sTc791wr" role="1B3o_S" />
+      <node concept="3uibUv" id="6I2sTc795mj" role="3clF45">
+        <ref role="3uigEE" to="sw0k:~Shape" resolve="Shape" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6I2sTc78L9q" role="jymVt" />
+    <node concept="3Tm1VV" id="6I2sTc78GVa" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="6I2sTc79GBZ">
+    <property role="TrG5h" value="DummyBaseObjectType" />
+    <node concept="Wx3nA" id="6I2sTc79Hj0" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="SINGLETON" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="6I2sTc79H2B" role="1B3o_S" />
+      <node concept="3uibUv" id="6I2sTc79HbZ" role="1tU5fm">
+        <ref role="3uigEE" to="sw0k:~ObjectType" resolve="ObjectType" />
+      </node>
+      <node concept="2ShNRf" id="6I2sTc79HlB" role="33vP2m">
+        <node concept="HV5vD" id="6I2sTc79HJ0" role="2ShVmc">
+          <ref role="HV5vE" node="6I2sTc79GBZ" resolve="DummyBaseObjectType" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6I2sTc79HM9" role="jymVt" />
+    <node concept="3clFbW" id="6I2sTc79HPu" role="jymVt">
+      <node concept="3cqZAl" id="6I2sTc79HPw" role="3clF45" />
+      <node concept="3Tm6S6" id="6I2sTc79HSW" role="1B3o_S" />
+      <node concept="3clFbS" id="6I2sTc79HPy" role="3clF47" />
+    </node>
+    <node concept="3Tm1VV" id="6I2sTc79GC0" role="1B3o_S" />
+    <node concept="3uibUv" id="6I2sTc79GXM" role="1zkMxy">
+      <ref role="3uigEE" to="sw0k:~ObjectType" resolve="ObjectType" />
     </node>
   </node>
 </model>
