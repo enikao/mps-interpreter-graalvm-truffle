@@ -44,6 +44,10 @@
         <property id="2256443781828900997" name="value" index="8R8sJ" />
       </concept>
       <concept id="2256443781828933458" name="example.mps.com.oracle.truffle.sl.structure.SlEqual" flags="ng" index="8RgzS" />
+      <concept id="5344932139651571640" name="example.mps.com.oracle.truffle.sl.structure.SlLoop" flags="ng" index="mFhNe">
+        <child id="8267403086122620750" name="max" index="2hXi03" />
+        <child id="5344932139651573430" name="body" index="mFin0" />
+      </concept>
       <concept id="502198586771090329" name="example.mps.com.oracle.truffle.sl.structure.SlSub" flags="ng" index="PMo5H" />
       <concept id="502198586770667924" name="example.mps.com.oracle.truffle.sl.structure.SlNew" flags="ng" index="POLdw" />
       <concept id="502198586770726605" name="example.mps.com.oracle.truffle.sl.structure.SlPropertyRead" flags="ng" index="PP3gT" />
@@ -157,7 +161,7 @@
         <node concept="8Phju" id="rSaJgNcwaC" role="8Pj$i">
           <ref role="8PgJH" node="1KJvzqK8rKb" resolve="testX" />
           <node concept="8PavD" id="rSaJgNcx0J" role="8PgXB">
-            <property role="8Pa68" value="100" />
+            <property role="8Pa68" value="400" />
           </node>
           <node concept="POLdw" id="rSaJgNcxd3" role="8PgXB" />
         </node>
@@ -249,6 +253,171 @@
             <node concept="8P2mK" id="rSaJgNcv1S" role="8PgXB">
               <ref role="8Pb$m" node="6I2sTc78gir" resolve="sum" />
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="8ODLe" id="3TqySSItrSr" role="8OE8G">
+      <property role="TrG5h" value="testFactor" />
+      <node concept="8PkiO" id="3TqySSItrYD" role="8OXF8">
+        <node concept="8Phju" id="3TqySSIts11" role="8Pj$i">
+          <ref role="8PgJH" node="3TqySSItqgh" resolve="factor" />
+          <node concept="8PavD" id="3TqySSIts5L" role="8PgXB">
+            <property role="8Pa68" value="5" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="8ODLe" id="3TqySSItqgh" role="8OE8G">
+      <property role="TrG5h" value="factor" />
+      <node concept="8OXbn" id="3TqySSItq$a" role="8OK7C">
+        <property role="TrG5h" value="a" />
+      </node>
+      <node concept="8OSLo" id="3TqySSItqCP" role="8OXF8">
+        <node concept="PPQ6m" id="3TqySSItqJR" role="8P7Xh">
+          <node concept="8RgzS" id="3TqySSItqOF" role="PPRn3">
+            <node concept="8P2mK" id="3TqySSItqT_" role="8PnDJ">
+              <ref role="8Pb$m" node="3TqySSItq$a" resolve="a" />
+            </node>
+            <node concept="8PavD" id="3TqySSItr0E" role="8Pnql">
+              <property role="8Pa68" value="0" />
+            </node>
+          </node>
+          <node concept="8PkiO" id="3TqySSItrcq" role="PPO39">
+            <node concept="8PavD" id="3TqySSItro8" role="8Pj$i">
+              <property role="8Pa68" value="1" />
+            </node>
+          </node>
+        </node>
+        <node concept="8PkiO" id="3TqySSItrt5" role="8P7Xh">
+          <node concept="8Phju" id="4CH0RpsvzWf" role="8Pj$i">
+            <ref role="8PgJH" node="3TqySSItqgh" resolve="factor" />
+            <node concept="PMo5H" id="4CH0Rpsv$dj" role="8PgXB">
+              <node concept="8P2mK" id="4CH0Rpsv$hM" role="8PnDJ">
+                <ref role="8Pb$m" node="3TqySSItq$a" resolve="a" />
+              </node>
+              <node concept="8PavD" id="4CH0Rpsv$nw" role="8Pnql">
+                <property role="8Pa68" value="1" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="8ODLe" id="4CH0RpsvB$V" role="8OE8G">
+      <property role="TrG5h" value="testLoopLoop" />
+      <node concept="8PkiO" id="4CH0RpsvZkJ" role="8OXF8">
+        <node concept="8Phju" id="4CH0RpsvZqz" role="8Pj$i">
+          <ref role="8PgJH" node="4CH0RpsvXIP" resolve="testLoopX" />
+          <node concept="POLdw" id="4CH0RpsvZu7" role="8PgXB" />
+          <node concept="8PavD" id="4CH0RpsvZE4" role="8PgXB">
+            <property role="8Pa68" value="1000000000" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="8ODLe" id="4CH0RpsvXIP" role="8OE8G">
+      <property role="TrG5h" value="testLoopX" />
+      <node concept="8OXbn" id="4CH0RpsvXWA" role="8OK7C">
+        <property role="TrG5h" value="var2" />
+      </node>
+      <node concept="8OXbn" id="4CH0RpsvXYX" role="8OK7C">
+        <property role="TrG5h" value="max2" />
+      </node>
+      <node concept="8OSLo" id="4CH0RpsvYHp" role="8OXF8">
+        <node concept="PP5xY" id="4CH0RpsvY3D" role="8P7Xh">
+          <property role="PP7Wg" value="val" />
+          <node concept="8PavD" id="4CH0RpsvYrd" role="PP$PZ">
+            <property role="8Pa68" value="0" />
+          </node>
+          <node concept="8P2mK" id="4CH0RpsvYj5" role="PP6UQ">
+            <ref role="8Pb$m" node="4CH0RpsvXWA" resolve="var2" />
+          </node>
+        </node>
+        <node concept="mFhNe" id="4CH0RpswjWV" role="8P7Xh">
+          <node concept="PP5xY" id="4CH0Rpswkg3" role="mFin0">
+            <property role="PP7Wg" value="val" />
+            <node concept="8Pmhk" id="4CH0RpswkqQ" role="PP$PZ">
+              <node concept="PP3gT" id="4CH0RpswkrI" role="8PnDJ">
+                <property role="PP7Wg" value="val" />
+                <node concept="8P2mK" id="4CH0Rpswkuk" role="PP6UQ">
+                  <ref role="8Pb$m" node="4CH0RpsvXWA" resolve="var2" />
+                </node>
+              </node>
+              <node concept="8PavD" id="4CH0RpswkAj" role="8Pnql">
+                <property role="8Pa68" value="1" />
+              </node>
+            </node>
+            <node concept="8P2mK" id="4CH0Rpswklt" role="PP6UQ">
+              <ref role="8Pb$m" node="4CH0RpsvXWA" resolve="var2" />
+            </node>
+          </node>
+          <node concept="8P2mK" id="1UPm4cnzm52" role="2hXi03">
+            <ref role="8Pb$m" node="4CH0RpsvXYX" resolve="max2" />
+          </node>
+        </node>
+        <node concept="8PkiO" id="4CH0RpsvE4p" role="8P7Xh">
+          <node concept="PP3gT" id="4CH0RpswkFV" role="8Pj$i">
+            <property role="PP7Wg" value="val" />
+            <node concept="8P2mK" id="4CH0RpswkLv" role="PP6UQ">
+              <ref role="8Pb$m" node="4CH0RpsvXWA" resolve="var2" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="8ODLe" id="177Do_DKMmr" role="8OE8G">
+      <property role="TrG5h" value="testSimpleLoop" />
+      <node concept="8PkiO" id="177Do_DKMtg" role="8OXF8">
+        <node concept="8Phju" id="177Do_DKMxW" role="8Pj$i">
+          <ref role="8PgJH" node="177Do_DKJUZ" resolve="simpleLoop" />
+          <node concept="8PavD" id="177Do_DKMD0" role="8PgXB">
+            <property role="8Pa68" value="1000000" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="8ODLe" id="177Do_DKJUZ" role="8OE8G">
+      <property role="TrG5h" value="simpleLoop" />
+      <node concept="8OXbn" id="177Do_DKLel" role="8OK7C">
+        <property role="TrG5h" value="w" />
+      </node>
+      <node concept="8OSLo" id="177Do_DKKEK" role="8OXF8">
+        <node concept="mFhNe" id="177Do_DKKLM" role="8P7Xh">
+          <node concept="8P2mK" id="7UIQMbSNMv3" role="2hXi03">
+            <ref role="8Pb$m" node="177Do_DKLel" resolve="w" />
+          </node>
+          <node concept="8Phju" id="7UIQMbSNFHl" role="mFin0">
+            <ref role="8PgJH" node="7UIQMbSNEPS" resolve="nop" />
+            <node concept="8Pmhk" id="177Do_DKL4K" role="8PgXB">
+              <node concept="8P2mK" id="177Do_DKLnH" role="8PnDJ">
+                <ref role="8Pb$m" node="177Do_DKLel" resolve="w" />
+              </node>
+              <node concept="8PavD" id="177Do_DKLsv" role="8Pnql">
+                <property role="8Pa68" value="42" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="8PkiO" id="177Do_DKMhm" role="8P7Xh">
+          <node concept="8P2mK" id="177Do_DKMhz" role="8Pj$i">
+            <ref role="8Pb$m" node="177Do_DKLel" resolve="w" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="8ODLe" id="7UIQMbSNEPS" role="8OE8G">
+      <property role="TrG5h" value="nop" />
+      <node concept="8OXbn" id="7UIQMbSNFiz" role="8OK7C">
+        <property role="TrG5h" value="n" />
+      </node>
+      <node concept="8PkiO" id="7UIQMbSNPZ4" role="8OXF8">
+        <node concept="8Pmhk" id="5NQ3nYHj3oD" role="8Pj$i">
+          <node concept="8PavD" id="7y5Ta$ewheh" role="8PnDJ">
+            <property role="8Pa68" value="42" />
+          </node>
+          <node concept="8PavD" id="5NQ3nYHj3XP" role="8Pnql">
+            <property role="8Pa68" value="42" />
           </node>
         </node>
       </node>

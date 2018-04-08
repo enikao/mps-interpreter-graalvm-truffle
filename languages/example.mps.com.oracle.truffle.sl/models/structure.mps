@@ -453,5 +453,33 @@
     <property role="34LRSv" value="-" />
     <ref role="1TJDcQ" node="rSaJgNcdHE" resolve="SlBinaryValue" />
   </node>
+  <node concept="1TIwiD" id="70JwHSQf8Ge">
+    <property role="EcuMT" value="8083823747057617678" />
+    <property role="3GE5qa" value="expression" />
+    <property role="TrG5h" value="SlMul" />
+    <property role="34LRSv" value="*" />
+    <ref role="1TJDcQ" node="rSaJgNcdHE" resolve="SlBinaryValue" />
+  </node>
+  <node concept="1TIwiD" id="4CH0Rpsw1YS">
+    <property role="EcuMT" value="5344932139651571640" />
+    <property role="3GE5qa" value="statement" />
+    <property role="TrG5h" value="SlLoop" />
+    <property role="34LRSv" value="loop" />
+    <ref role="1TJDcQ" node="1XgvUCnwWGU" resolve="SlStatement" />
+    <node concept="1TJgyj" id="7aVHORzjDte" role="1TKVEi">
+      <property role="IQ2ns" value="8267403086122620750" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="max" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1XgvUCnwV2_" resolve="SlExpression" />
+    </node>
+    <node concept="1TJgyj" id="4CH0Rpsw2qQ" role="1TKVEi">
+      <property role="IQ2ns" value="5344932139651573430" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1XgvUCnwWGU" resolve="SlStatement" />
+    </node>
+  </node>
 </model>
 

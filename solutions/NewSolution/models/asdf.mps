@@ -89,6 +89,9 @@
     <node concept="3h69f$" id="3Mbqk0xaBqZ" role="3h69fA">
       <property role="3OnndV" value="function main() { return(fac(200)); } function fac(x) { if (x == 0) { return 1; } else { return x * fac(x-1); }}" />
     </node>
+    <node concept="3h69f$" id="2KgwvZah_u7" role="3h69fA">
+      <property role="3OnndV" value="function main() { return simpleLoop(1000000); } function simpleLoop(w) { i = 0; while(i &lt; w) { i = i + 1; nop(w + 42); } return w; } function nop(n) { return 42 + 42; }" />
+    </node>
   </node>
   <node concept="312cEu" id="5s7ADhjaARM">
     <property role="TrG5h" value="Test" />
