@@ -45,6 +45,8 @@
     <stubModelEntry path="${module}/libs/locator.jar" />
     <stubModelEntry path="${module}/libs/truffle-nfi.jar" />
     <stubModelEntry path="${module}/libs/truffle-dsl-processor.jar" />
+    <stubModelEntry path="${module}/libs/graal-js.jar" />
+    <stubModelEntry path="${module}/libs/asm_debug_all.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>

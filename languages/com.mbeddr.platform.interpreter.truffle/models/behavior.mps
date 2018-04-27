@@ -20,6 +20,7 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="tp2q" ref="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
+    <import index="b0os" ref="f8d5216a-c767-462a-9290-97f1f33a0497/java:com.oracle.truffle.api.nodes(GraalApi/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
@@ -2485,6 +2486,75 @@
         </node>
       </node>
       <node concept="17QB3L" id="1uXWfcSjbq8" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="uqtHIrPEGG">
+    <property role="3GE5qa" value="evaluator" />
+    <ref role="13h7C2" to="9j3q:uqtHIrPDfz" resolve="ForeignEvaluatorConceptFunction" />
+    <node concept="13i0hz" id="uqtHIrPGcv" role="13h7CS">
+      <property role="13i0is" value="false" />
+      <property role="TrG5h" value="getExpectedReturnType" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="tpek:hEwIGRD" resolve="getExpectedReturnType" />
+      <node concept="3Tm1VV" id="uqtHIrPGcz" role="1B3o_S" />
+      <node concept="3clFbS" id="uqtHIrPGc_" role="3clF47">
+        <node concept="3clFbF" id="uqtHIrPH76" role="3cqZAp">
+          <node concept="2pJPEk" id="uqtHIrPH74" role="3clFbG">
+            <node concept="2pJPED" id="uqtHIrPHfO" role="2pJPEn">
+              <ref role="2pJxaS" to="tpee:g7uibYu" resolve="ClassifierType" />
+              <node concept="2pIpSj" id="uqtHIrPHWl" role="2pJxcM">
+                <ref role="2pIpSl" to="tpee:g7uigIF" resolve="classifier" />
+                <node concept="36bGnv" id="uqtHIrQRwR" role="2pJxcZ">
+                  <ref role="36bGnp" to="wyt6:~String" resolve="String" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="uqtHIrPGcA" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="uqtHIrPELO" role="13h7CS">
+      <property role="13i0is" value="false" />
+      <property role="TrG5h" value="getParameterConcepts" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="tpek:2xELmDxyi2v" resolve="getParameterConcepts" />
+      <node concept="3Tm1VV" id="uqtHIrPELP" role="1B3o_S" />
+      <node concept="3clFbS" id="uqtHIrPELQ" role="3clF47">
+        <node concept="3cpWs8" id="uqtHIrPELR" role="3cqZAp">
+          <node concept="3cpWsn" id="uqtHIrPELS" role="3cpWs9">
+            <property role="TrG5h" value="result" />
+            <node concept="_YKpA" id="uqtHIrPELT" role="1tU5fm">
+              <node concept="3bZ5Sz" id="uqtHIrPELU" role="_ZDj9">
+                <ref role="3bZ5Sy" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="uqtHIrPELV" role="33vP2m">
+              <node concept="13iAh5" id="uqtHIrPELW" role="2Oq$k0">
+                <ref role="3eA5LN" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+              </node>
+              <node concept="2qgKlT" id="uqtHIrPELX" role="2OqNvi">
+                <ref role="37wK5l" to="tpek:2xELmDxyi2v" resolve="getParameterConcepts" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="uqtHIrPEM3" role="3cqZAp">
+          <node concept="37vLTw" id="uqtHIrPEM4" role="3cqZAk">
+            <ref role="3cqZAo" node="uqtHIrPELS" resolve="result" />
+          </node>
+        </node>
+      </node>
+      <node concept="_YKpA" id="uqtHIrPEM5" role="3clF45">
+        <node concept="3bZ5Sz" id="uqtHIrPEM6" role="_ZDj9">
+          <ref role="3bZ5Sy" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="uqtHIrPEGH" role="13h7CW">
+      <node concept="3clFbS" id="uqtHIrPEGI" role="2VODD2" />
     </node>
   </node>
 </model>

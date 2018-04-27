@@ -10,6 +10,13 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="6054523464626862044" name="jetbrains.mps.lang.structure.structure.AttributeInfo_IsMultiple" flags="ng" index="tn0Fv">
+        <property id="6054523464626875854" name="value" index="tnX3d" />
+      </concept>
+      <concept id="2992811758677295509" name="jetbrains.mps.lang.structure.structure.AttributeInfo" flags="ng" index="M6xJ_">
+        <property id="7588428831955550663" name="role" index="Hh88m" />
+        <child id="7588428831955550186" name="multiple" index="HhnKV" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -45,6 +52,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -479,6 +487,47 @@
       <property role="20kJfa" value="body" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="1XgvUCnwWGU" resolve="SlStatement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6slkmVZ8aIi">
+    <property role="EcuMT" value="7427932697586084754" />
+    <property role="TrG5h" value="SlJavascript" />
+    <property role="34LRSv" value="js:" />
+    <property role="3GE5qa" value="expression" />
+    <ref role="1TJDcQ" node="1XgvUCnwV2_" resolve="SlExpression" />
+    <node concept="1TJgyj" id="5dPhMYQkPFz" role="1TKVEi">
+      <property role="IQ2ns" value="6013791147671116515" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="arguments" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1XgvUCnwV2_" resolve="SlExpression" />
+    </node>
+    <node concept="1TJgyi" id="6slkmVZ8cx0" role="1TKVEl">
+      <property role="IQ2nx" value="7427932697586092096" />
+      <property role="TrG5h" value="code" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="64JkRizU_QU">
+    <property role="EcuMT" value="7002907706015767994" />
+    <property role="TrG5h" value="ResultAnnotation" />
+    <property role="34LRSv" value="result:" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="64JkRizUBx$" role="lGtFl">
+      <property role="Hh88m" value="resultAnnotation" />
+      <node concept="tn0Fv" id="64JkRizUBNe" role="HhnKV">
+        <property role="tnX3d" value="false" />
+      </node>
+    </node>
+    <node concept="1TJgyi" id="64JkRizUDRs" role="1TKVEl">
+      <property role="IQ2nx" value="7002907706015784412" />
+      <property role="TrG5h" value="executionTime" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="64JkRizUEhU" role="1TKVEl">
+      <property role="IQ2nx" value="7002907706015786106" />
+      <property role="TrG5h" value="result" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

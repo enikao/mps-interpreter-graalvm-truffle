@@ -752,5 +752,40 @@
       <ref role="20lvS9" to="tpce:f_TJgxF" resolve="PropertyDeclaration" />
     </node>
   </node>
+  <node concept="1TIwiD" id="uqtHIrPBvY">
+    <property role="EcuMT" value="547880990263375870" />
+    <property role="3GE5qa" value="evaluator" />
+    <property role="TrG5h" value="ForeignEvaluator" />
+    <property role="34LRSv" value="foreign &lt;{target}&gt;" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="uqtHIrQKCU" role="1TKVEl">
+      <property role="IQ2nx" value="547880990263675450" />
+      <property role="TrG5h" value="mimeType" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="uqtHIrPD3X" role="1TKVEi">
+      <property role="IQ2ns" value="547880990263382269" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="uqtHIrPDfz" resolve="ForeignEvaluatorConceptFunction" />
+    </node>
+    <node concept="PrWs8" id="uqtHIrPC39" role="PzmwI">
+      <ref role="PrY4T" node="1XgvUCnwnhg" resolve="IEvaluator" />
+    </node>
+    <node concept="1TJgyj" id="5dPhMYQhnAc" role="1TKVEi">
+      <property role="IQ2ns" value="6013791147670206860" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="argumentsFeature" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpce:f_TJgxE" resolve="LinkDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="uqtHIrPDfz">
+    <property role="EcuMT" value="547880990263383011" />
+    <property role="3GE5qa" value="evaluator" />
+    <property role="TrG5h" value="ForeignEvaluatorConceptFunction" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  </node>
 </model>
 

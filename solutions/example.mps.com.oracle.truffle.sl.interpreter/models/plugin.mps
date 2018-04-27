@@ -20,6 +20,8 @@
     <import index="fkp8" ref="r:22937d67-4a11-4879-ad4a-1d5bc011b8c9(example.mps.com.oracle.truffle.sl.interpreter.plugin)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="ecvt" ref="f8d5216a-c767-462a-9290-97f1f33a0497/java:com.oracle.truffle.api(GraalApi/)" />
+    <import index="vmdo" ref="f8d5216a-c767-462a-9290-97f1f33a0497/java:com.oracle.truffle.api.vm(GraalApi/)" />
+    <import index="bzsg" ref="f8d5216a-c767-462a-9290-97f1f33a0497/java:com.oracle.truffle.api.source(GraalApi/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -88,6 +90,12 @@
         <reference id="2256443781830799517" name="feature" index="8YoWR" />
       </concept>
       <concept id="2256443781831035240" name="com.mbeddr.platform.interpreter.truffle.structure.TypeGuard" flags="ng" index="8Zvr2" />
+      <concept id="547880990263375870" name="com.mbeddr.platform.interpreter.truffle.structure.ForeignEvaluator" flags="ng" index="2sj04_">
+        <property id="547880990263675450" name="mimeType" index="2sgnNx" />
+        <reference id="6013791147670206860" name="argumentsFeature" index="3_c3Uz" />
+        <child id="547880990263382269" name="body" index="2sjeoA" />
+      </concept>
+      <concept id="547880990263383011" name="com.mbeddr.platform.interpreter.truffle.structure.ForeignEvaluatorConceptFunction" flags="ig" index="2sjekS" />
       <concept id="1710788360877160996" name="com.mbeddr.platform.interpreter.truffle.structure.EvaluateIndexedExpression" flags="ng" index="wikFn">
         <child id="1710788360877185908" name="index" index="wieI7" />
       </concept>
@@ -1187,14 +1195,14 @@
           <node concept="3clFbS" id="1UPm4cnx_iO" role="2VODD2">
             <node concept="3cpWs8" id="7aVHORzhj12" role="3cqZAp">
               <node concept="3cpWsn" id="7aVHORzhj10" role="3cpWs9">
-                <property role="3TUv4t" value="true" />
+                <property role="3TUv4t" value="false" />
                 <property role="TrG5h" value="upper" />
                 <node concept="3cpWsb" id="7aVHORzjYbG" role="1tU5fm" />
-                <node concept="10QFUN" id="1UPm4cnxAj0" role="33vP2m">
-                  <node concept="8Ysti" id="1UPm4cnxAiZ" role="10QFUP">
+                <node concept="10QFUN" id="4iXjuqluQgn" role="33vP2m">
+                  <node concept="8Ysti" id="4iXjuqluQgm" role="10QFUP">
                     <ref role="8YoWR" to="57mi:7aVHORzjDte" resolve="max" />
                   </node>
-                  <node concept="3cpWsb" id="1UPm4cnxAiY" role="10QFUM" />
+                  <node concept="3cpWsb" id="4iXjuqluQgl" role="10QFUM" />
                 </node>
               </node>
             </node>
@@ -1297,6 +1305,20 @@
         </node>
       </node>
       <node concept="3cqZAl" id="6bz27cUkT8c" role="1oEY5j" />
+    </node>
+    <node concept="2sj04_" id="uqtHIrQr2r" role="8Ohi$">
+      <property role="2sgnNx" value="text/javascript" />
+      <ref role="8Qxqj" to="57mi:6slkmVZ8aIi" resolve="SlJavascript" />
+      <ref role="3_c3Uz" to="57mi:5dPhMYQkPFz" resolve="arguments" />
+      <node concept="2sjekS" id="5dPhMYQ8RV4" role="2sjeoA">
+        <node concept="3clFbS" id="5dPhMYQ8RV5" role="2VODD2">
+          <node concept="3clFbF" id="5dPhMYQ8SfD" role="3cqZAp">
+            <node concept="PFD7z" id="5dPhMYQapKr" role="3clFbG">
+              <ref role="PFGQF" to="57mi:6slkmVZ8cx0" resolve="code" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="8ADzG" id="1XgvUCnMNpI" role="8Ohi$">
       <ref role="8Qxqj" to="57mi:1XgvUCnzcEe" resolve="SlBigIntegerLiteral" />
